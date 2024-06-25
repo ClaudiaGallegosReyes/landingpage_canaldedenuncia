@@ -1,0 +1,857 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --main-color: #ffbd22;
+}
+
+html {
+  margin: -10px;
+  padding: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.mainBody {
+  background-color: rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+}
+
+.div_mainTitle {
+  top: 70px;
+  height: 65rem;
+  background-image: url(../img/mainImg.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.h1_mainTitle {
+  margin: 0px;
+  padding: 20px;
+  font-size: 10rem;
+  text-align: end;
+  color: #000000;
+  position: relative;
+  top: 25%;
+  z-index: 1;
+}
+
+.rectangle1 {
+  height: 100px;
+  width: 500px;
+  background-color: var(--main-color);
+  border-radius: 30px;
+  position: relative;
+  top: -300px;
+  left: 80%;
+  z-index: 0;
+}
+
+.rectangle2 {
+  height: 300px;
+  width: 730px;
+  background-color: var(--main-color);
+  border-radius: 30px;
+  position: relative;
+  top: -185px;
+  left: 70%;
+  z-index: 0;
+}
+
+.div_contextComponent {
+  margin-top: -120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h2_subtitle {
+  font-size: 6.5rem;
+  color: #000000;
+  z-index: 1;
+  text-align: center;
+}
+
+.div_contextTitleRectangle {
+  height: 70px;
+  width: 35%;
+  background-color: var(--main-color);
+  border-radius: 30px;
+  position: relative;
+  top: -140px;
+  z-index: 0;
+}
+
+.p_contextParagraph {
+  margin-top: -50px;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.div_lawAspectsComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.div_lawPrinciplesTitle {
+  width: 100%;
+  background-image: url(../img/buildingImage.png);
+  background-position: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1_lawPrinciplesTitle {
+  font-size: 7rem;
+  color: #FFF;
+  z-index: 1;
+}
+
+.div_lawAspects {
+  width: 120rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30%;
+  margin-top: 100px;
+}
+
+.div_lawAspectBackground {
+  width: 500px;
+  height: 60px;
+  margin: 50px;
+  background-color: var(--main-color);
+  padding: 2rem;
+  border-radius: 40px;
+}
+
+.div_lawAspectNumber {
+  color: #ffffff;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: #000000;
+  position: relative;
+  left: 470px;
+  top: -50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.article_lawAspectTitle {
+  margin-top: -100px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.div_groupDescriptionComponent {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.figure_groupImage {
+  width: 700px;
+  height: 800px;
+  background-image: url(../img/laptopImg.png);
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-size: 150%;
+}
+
+.div_groupDescriptionContainer {
+  padding: 50px;
+  width: 70%;
+  margin-left: -100px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color);
+  border-radius: 20px;
+}
+
+.h1_groupDescriptionTitle {
+  font-size: 4rem;
+  text-align: end;
+}
+
+.p_groupDescriptionParagraph {
+  font-size: 2rem;
+}
+
+.div_problemDescriptionContainer {
+  margin-top: 50px;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1_problemTitle {
+  font-size: 6rem;
+  color: #FFF;
+  text-align: center;
+  margin: 15px 10px;
+}
+
+.p_problemDescription {
+  font-size: 2rem;
+  color: #FFF;
+  padding: 0px 50px;
+}
+
+.figure_problemImage {
+  margin: -10px 0px;
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/problemImg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50%;
+}
+
+.div_solutionTitleRectangle {
+  height: 70px;
+  width: 700px;
+  background-color: var(--main-color);
+  border-radius: 30px;
+  position: relative;
+  top: -140px;
+  z-index: 0;
+}
+
+.div_numberDescriptionBelowComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div_solutionTitleRectangle {
+  height: 70px;
+  width: 93%;
+  background-color: var(--main-color);
+  border-radius: 30px;
+  position: relative;
+  top: -140px;
+  z-index: 0;
+}
+
+.div_servicesItems {
+  margin-left: -30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.article_solutionItem {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.h2_solutionNumber {
+  background-color: var(--main-color);
+  font-weight: bolder;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.h2_solutionTitle {
+  font-size: 2rem;
+}
+
+.p_solutionDescription {
+  font-size: 1.5rem;
+}
+
+.div_descriptionIconComponent {
+  margin-top: 50px;
+}
+
+.div_iconAndDescContainer {
+  margin: 50px 100px;
+  padding: 50px;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: row;
+  border-radius: 0px 50px;
+}
+
+.section_iconAndDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.h2_descriptionTitle {
+  font-size: 4rem;
+}
+
+.p_descriptionParagraph {
+  font-size: 1.5rem;
+  padding-right: 40px;
+}
+
+.div_processDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div_processTitleRectangle {
+  height: 70px;
+  width: 95%;
+  background-color: var(--main-color);
+  border-radius: 30px;
+  position: relative;
+  top: -140px;
+  z-index: 0;
+}
+
+.div_numberDescriptionSideComponent {
+  margin-top: -100px;
+}
+
+.article_processItem {
+  margin: 30px;
+  width: 30rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.h2_processNumber {
+  background-color: var(--main-color);
+  font-weight: bolder;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.p_processDescription {
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.div_issueProcess {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.div_conclusionComponent {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--main-color);
+  margin-top: 50px;
+}
+
+.figure_conclusionImage {
+  background-image: url(../img/teamworkImg.png);
+  background-repeat: no-repeat;
+  background-size: 70rem;
+  background-position: -100px -90px;
+  width: 70%;
+  height: 900px;
+  margin: 0px;
+}
+
+.aside_conclusionTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 100px;
+}
+
+.h1_conclusionTitle {
+  font-size: 4rem;
+  color: #FFF;
+}
+
+.p_conclusionParagraph {
+  font-size: 2rem;
+}
+
+.img_processImg {
+  width: 60%;
+}
+
+.main_finalComponent {
+  width: auto;
+  margin-bottom: -10px;
+  background-image: url(../img/buildingFinalImg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+}
+
+.h1_finalTitle {
+  background-color: var(--main-color);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: -60px;
+  color: #FFF;
+  font-size: 5rem;
+}
+
+.p_finalDescription {
+  background-color: #000;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: -60px;
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+
+.div_plansContainer {
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.article_planItem {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: #ffffffd3;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.h1_planTitle {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  border-radius: 10px;
+  padding: 0px 0px;
+}
+
+.p_planPrice {
+  margin: 0px 0px 20px 0px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.span_planPriceSymbol {
+  font-size: 20px;
+}
+
+.p_planFeature {
+  font-size: 1.5rem;
+  margin: 0px 0px 10px 0px;
+}
+
+.button_planBuy {
+  margin: 20px 0px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  padding: 15px 50px;
+  border: solid 1px transparent;
+  transition: background-color 0.3s, border 0.2s;
+}
+
+.button_planBuy:hover {
+  transition: background-color 0.3s, border 0.2s;
+  background-color: #FFF;
+  border: solid 1px var(--main-color);
+  cursor: pointer;
+}
+
+.nav_navbarComponent {
+  position: fixed;
+  width: 100%;
+  background-color: #000;
+  padding: 5px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #FFF;
+  z-index: 2;
+}
+
+.h1_navbarTitle {
+  font-size: 2rem;
+  background: #FFBD22;
+  background: linear-gradient(to bottom right, #FFBD22 65%, #FFFFFF 65%, #FFFFFF 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s;
+}
+
+.h1_navbarTitle:hover {
+  cursor: default;
+  transition: all 0.8s;
+  transform: scale(105%) translateX(10px);
+}
+
+
+.ul_navbarItems {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-right: 50px;
+}
+
+.li_navbarItem {
+  list-style: none;
+  margin: 0px 50px;
+  font-size: 1.2rem;
+  font-variant: small-caps;
+  transition: all 0.5s;
+}
+
+.li_navbarItem:hover {
+  transition: all 0.5s;
+  transform: translateY(3px);
+}
+
+.a_navbarItem {
+  text-decoration: none;
+  color: #FFF;
+  transition: all 0.5s;
+}
+
+.a_navbarItem:hover {
+  transition: all 0.5s;
+  color: var(--main-color);
+}
+
+
+
+/* Estilos específicos para pantallas con un ancho mínimo de 769px */
+@media only screen and (max-width: 1024px) {
+
+  html {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+
+  body {
+    margin: 0px;
+  }
+
+  .mainBody {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div_mainTitle {
+    margin: 0px;
+    top: 70px;
+    height: auto;
+    background-image: none;
+    display: block;
+  }
+
+  .h1_mainTitle {
+    top: 70px;
+    padding: 0px;
+    font-size: 4rem;
+  }
+
+  .rectangle1 {
+    position: absolute;
+    top: 70px;
+    left: -100px;
+    height: 200px;
+    width: 100%;
+    background-color: var(--main-color);
+    border-radius: 30px;
+    z-index: 0;
+  }
+
+  .rectangle2 {
+    display: none;
+  }
+
+  .nav_navbarComponent {
+    margin: 0px;
+    padding: 0px 20px;
+    width: 100%;
+  }
+
+  .h1_navbarTitle {
+    font-size: 1rem;
+  }
+
+  .ul_navbarItems {
+    display: none;
+  }
+
+  .div_contextComponent {
+    margin-top: 100px;
+  }
+
+  .h2_subtitle {
+    font-size: 3rem;
+    margin: 10px;
+  }
+
+  .div_contextTitleRectangle {
+    margin: auto;
+    position: relative;
+    height: 20px;
+    width: 80%;
+    top: -2rem;
+  }
+
+  .p_contextParagraph {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+  }
+
+  .div_lawPrinciplesTitle {
+    width: 100%;
+    text-align: center;
+  }
+
+  .h1_lawPrinciplesTitle {
+    font-size: 3rem;
+  }
+
+  .div_lawAspects {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .div_lawAspectBackground {
+    margin: 40px 0px 10px 10px;
+    border-radius: 20px;
+    height: 40px;
+    width: 70%;
+    z-index: 0;
+  }
+
+  .article_lawAspectTitle {
+    padding-top: 50px;
+    font-size: 1.5rem;
+    z-index: 2;
+  }
+
+  .div_lawAspectNumber {
+    font-size: 1rem;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 90%;
+  }
+
+  .div_groupDescriptionComponent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px 0px 0px;
+    width: 100%;
+  }
+
+  .h1_groupDescriptionTitle {
+  font-size: 2rem;
+  }
+
+  .div_groupDescriptionContainer {
+    margin: 0px;
+    width: 100%;
+    border-radius: 0px;
+    background-color: #000;
+    color: #FFF;
+  }
+
+  .figure_groupImage {
+    display: none;
+  }
+
+  .p_groupDescriptionParagraph {
+    font-size: 1rem;
+  }
+
+  .div_numberDescriptionBelowComponent {
+    padding: 0px;
+    width: 100%;
+    margin: 60px 0px;
+  }
+
+  .div_servicesItems {
+    display: none;
+  }
+
+  .div_descriptionIconComponent {
+    margin: 0px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .div_iconAndDescContainer {
+    margin: 0px 0px 30px 0px;
+    width: 70%;
+  }
+
+  .h2_descriptionTitle {
+    font-size: 2rem;
+  }
+
+  .div_problemDescriptionContainer {
+    margin: 0px;
+    padding: 50px 0px;
+  }
+
+  .h1_problemTitle {
+    font-size: 2rem;
+    margin: 0px 0px 0px 0px
+  }
+
+  .p_problemDescription {
+    font-size: 1rem;
+  }
+
+  .figure_problemImage {
+    margin: 0px;
+    background-size: 170%;
+    background-clip: content-box;
+  }
+
+  .div_processDescriptionContainer {
+    display: none;
+  }
+
+  .div_solutionTitleRectangle {
+    margin: auto;
+    position: relative;
+    height: 20px;
+    width: 80%;
+    top: -9rem;
+  }
+
+  .div_issueProcess {
+    display: none;
+  }
+
+  .h2_solutionTitle {
+    margin: 0px;
+  }
+
+  .article_solutionItem {
+    width: 70%;
+  }
+
+  .img_descIcon {
+    display: none;
+  }
+
+  .aside_conclusionTextContainer {
+    padding: 0px;
+  }
+
+  .div_conclusionComponent {
+    margin: 140px 0px 50px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px 0px;
+  }
+
+  .figure_conclusionImage {
+    margin-top: 40px;
+    width: 100%;
+    background-size: 100%;
+    background-position: 70%;
+    height: 300px;
+  }
+
+  .h1_conclusionTitle {
+    font-size: 2rem;
+    padding: 10px 30px;
+  }
+
+  .p_conclusionParagraph {
+    font-size: 1.5rem;
+    padding: 0px 30px;
+
+  }
+
+  .main_finalComponent {
+    background-color: transparent;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .h1_finalTitle {
+    width: 100%;
+    font-size: 3rem;
+    margin: 0px;
+  }
+
+  .p_finalDescription {
+    background-color: transparent;
+    color: #000;
+    font-size: 1rem;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+
+  .div_plansContainer {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .article_planItem {
+    background-color: #000;
+    color: #FFF;
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  .h1_planTitle {
+    color: var(--main-color);
+  }
+
+}
+
