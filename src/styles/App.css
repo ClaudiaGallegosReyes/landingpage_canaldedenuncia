@@ -2,6 +2,7 @@
 
 :root {
   --main-color: #ffbd22;
+  --main-font: "Inter", sans-serif;
 }
 
 html {
@@ -13,26 +14,74 @@ html {
 
 .mainBody {
   background-color: rgb(255, 255, 255);
-  font-family: "Inter", sans-serif;
+  font-family: var(--main-font);
 }
 
 .div_mainTitle {
-  top: 70px;
+  width: 100%;
   height: 65rem;
   background-image: url(../img/mainImg.png);
   background-repeat: no-repeat;
   background-size: 50%;
 }
 
+.div_mainTitleButton {
+  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 30%;
+  left: 60%;
+  z-index: 1;
+}
+
 .h1_mainTitle {
+  padding: 0px;
   margin: 0px;
-  padding: 20px;
   font-size: 10rem;
   text-align: end;
   color: #000000;
   position: relative;
-  top: 25%;
   z-index: 1;
+}
+
+.h2_mainSubTitle {
+  font-size: 2.5rem;
+  z-index: 1;
+}
+
+.img_mainTitle {
+  position: absolute;
+  z-index: 0;
+  top: -10%;
+  left: 10%;
+}
+
+.p_mainDesc {
+  font-size: 1.5rem;
+  text-align: end;
+  z-index: 1;
+}
+
+.button_contact {
+  background-color: #000;
+  color: #FFF;
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: solid 1px transparent;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.button_contact:hover {
+  cursor: pointer;
+  transform: translateY(3px);
+  transition: all 0.5s;
 }
 
 .rectangle1 {
@@ -52,7 +101,7 @@ html {
   background-color: var(--main-color);
   border-radius: 30px;
   position: relative;
-  top: -185px;
+  top: -200px;
   left: 70%;
   z-index: 0;
 }
@@ -94,36 +143,45 @@ html {
   margin-top: 100px;
 }
 
+.div_lawAspects {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.div_lawAspectItem {
+  background-color: var(--main-color);
+  padding: 2rem;
+  border-radius: 40px;
+  margin: 0px 0px 100px 100px;
+  height: 70px;
+  width: 500px;
+  z-index: 0;
+  transition: height 0.7s;
+}
+
+.div_lawAspectItem.expanded {
+  height: auto;
+  transition: height 0.4s;
+}
+
 .div_lawPrinciplesTitle {
   width: 100%;
-  background-image: url(../img/buildingImage.png);
-  background-position: 30%;
+  background-image: url(../img/man-making-his-move.jpg);
+  background-position: 20%;
+  background-repeat: no-repeat;
+  background-size: 170%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .h1_lawPrinciplesTitle {
-  font-size: 7rem;
+  font-size: 6rem;
   color: #FFF;
   z-index: 1;
-}
-
-.div_lawAspects {
-  width: 120rem;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 30%;
-  margin-top: 100px;
-}
-
-.div_lawAspectBackground {
-  width: 500px;
-  height: 60px;
-  margin: 50px;
-  background-color: var(--main-color);
-  padding: 2rem;
-  border-radius: 40px;
 }
 
 .div_lawAspectNumber {
@@ -146,25 +204,20 @@ html {
   margin-top: -100px;
   font-size: 2rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
+.p_lawAspectDescription {
+  font-size: 1.2rem;
+}
+
+
 .div_groupDescriptionComponent {
-  margin-top: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-left: 50px;
   margin-right: 50px;
-}
-
-.figure_groupImage {
-  width: 700px;
-  height: 800px;
-  background-image: url(../img/laptopImg.png);
-  background-position: 10%;
-  background-repeat: no-repeat;
-  background-clip: content-box;
-  background-size: 150%;
 }
 
 .div_groupDescriptionContainer {
@@ -186,6 +239,35 @@ html {
   font-size: 2rem;
 }
 
+.article_groupPeopleDesc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  margin: 20px;
+}
+
+.h2_groupPeopleName{
+  z-index: 2;
+  margin-left: 20px;
+}
+
+.p_groupPeopleProfile {
+  font-size: 1.2rem;
+  z-index: 2;
+  margin-left: 20px;
+}
+
+.img_groupImg {
+  border-radius: 100%;
+  object-fit: cover;
+  width: 17rem;
+  height: 17rem;
+  border: solid 2px var(--main-color);
+  box-shadow: 6px 4px 0px var(--main-color);
+  z-index: 0;
+}
+
 .div_problemDescriptionContainer {
   margin-top: 50px;
   background-color: var(--main-color);
@@ -195,13 +277,14 @@ html {
 }
 
 .h1_problemTitle {
-  font-size: 6rem;
+  font-size: 5rem;
   color: #FFF;
   text-align: center;
   margin: 15px 10px;
 }
 
 .p_problemDescription {
+  text-align: center;
   font-size: 2rem;
   color: #FFF;
   padding: 0px 50px;
@@ -251,6 +334,7 @@ html {
 }
 
 .article_solutionItem {
+  margin: 10px 0px;
   width: 30rem;
   display: flex;
   flex-direction: column;
@@ -271,12 +355,48 @@ html {
 }
 
 .h2_solutionTitle {
-  font-size: 2rem;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.button_solutionDesc {
+  background-color: #000;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  color: #FFF;
+  width: 10rem;
+  border: solid 1px transparent;
+}
+
+.button_solutionDesc:hover {
+  cursor: pointer;
+  background-color: var(--main-color);
 }
 
 .p_solutionDescription {
-  font-size: 1.5rem;
+  transition: height 0.3s ease-in-out;
+  font-size: 1.2rem;
+  height: 0;
 }
+
+.p_solutionDescription.expand {
+  height: auto;
+}
+
+.div_servicesItems.expanded {
+  transition: height 0.3s ease-in-out;
+  height: auto;
+}
+
+.div_servicesItems.collapsed {
+  transition: height 0.3s ease-in-out;
+  height: 50px;
+}
+
+.img_descIcon {
+  width: 50%;
+}
+
 
 .div_descriptionIconComponent {
   margin-top: 50px;
@@ -306,7 +426,24 @@ html {
   padding-right: 40px;
 }
 
+.button_expand {
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  color: #FFF;
+  background-color: #000;
+  border-radius: 10px;
+  border: none;
+  transition: color 0.2s;
+}
+
+.button_expand:hover {
+  cursor: pointer;
+  color: var(--main-color);
+  transition: color 0.2s;
+}
+
 .div_processDescriptionContainer {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -323,17 +460,26 @@ html {
 }
 
 .div_numberDescriptionSideComponent {
-  margin-top: -100px;
+  width: 70%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div_processItems {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
 }
 
 .article_processItem {
-  margin: 30px;
-  width: 30rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 20px;
-  text-align: center;
+  text-align: start;
 }
 
 .h2_processNumber {
@@ -353,31 +499,33 @@ html {
 }
 
 .div_issueProcess {
-  height: 500px;
+  height: auto;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--main-color);
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
+  border-radius: 50px 0px;
 }
 
 .div_conclusionComponent {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: var(--main-color);
   margin-top: 50px;
 }
 
-.figure_conclusionImage {
-  background-image: url(../img/teamworkImg.png);
-  background-repeat: no-repeat;
-  background-size: 70rem;
-  background-position: -100px -90px;
-  width: 70%;
-  height: 900px;
-  margin: 0px;
+.img_conclusionImg {
+  margin-left: 60px;
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 100%;
 }
 
 .aside_conclusionTextContainer {
@@ -399,7 +547,7 @@ html {
 }
 
 .img_processImg {
-  width: 60%;
+  width: 20%;
 }
 
 .main_finalComponent {
@@ -553,6 +701,21 @@ html {
   color: var(--main-color);
 }
 
+/* Animaciones */
+
+.retract {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.expand {
+  opacity: 1;
+  max-height: 200px; /* Ajusta este valor según sea necesario */
+  transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+}
+
 
 
 /* Estilos específicos para pantallas con un ancho mínimo de 769px */
@@ -576,31 +739,32 @@ html {
 
   .div_mainTitle {
     margin: 0px;
-    top: 70px;
+    padding: 0px;
     height: auto;
     background-image: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .div_mainTitleButton {
+    position: relative;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    width: 90%;
+    margin-bottom: 100px;
   }
 
   .h1_mainTitle {
-    top: 70px;
     padding: 0px;
     font-size: 4rem;
   }
 
-  .rectangle1 {
-    position: absolute;
-    top: 70px;
-    left: -100px;
-    height: 200px;
-    width: 100%;
-    background-color: var(--main-color);
-    border-radius: 30px;
-    z-index: 0;
-  }
-
-  .rectangle2 {
-    display: none;
+  .img_mainTitle {
+    left: 20%;
   }
 
   .nav_navbarComponent {
@@ -650,18 +814,23 @@ html {
 
   .div_lawAspects {
     margin: 0px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
 
-  .div_lawAspectBackground {
-    margin: 40px 0px 10px 10px;
-    border-radius: 20px;
-    height: 40px;
+  .div_lawAspectItem {
+    margin: 0px;
     width: 70%;
-    z-index: 0;
+    margin: 0px 0px 30px 0px;
+    height: 60px;
+  }
+
+  .div_lawAspectItem.expanded {
+    transition: height 0.4s;
+    height: auto;
   }
 
   .article_lawAspectTitle {
@@ -680,9 +849,11 @@ html {
 
   .div_groupDescriptionComponent {
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    margin: 50px 0px 0px 0px;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
   }
 
@@ -690,16 +861,21 @@ html {
   font-size: 2rem;
   }
 
-  .div_groupDescriptionContainer {
+ .div_groupDescriptionContainer {
     margin: 0px;
-    width: 100%;
+    padding: 50px;
     border-radius: 0px;
     background-color: #000;
     color: #FFF;
+    border-radius: 20px 0px;
   }
 
   .figure_groupImage {
     display: none;
+  }
+
+  .article_groupPeopleDesc {
+    width: 90%;
   }
 
   .p_groupDescriptionParagraph {
@@ -713,22 +889,65 @@ html {
   }
 
   .div_servicesItems {
-    display: none;
-  }
-
-  .div_descriptionIconComponent {
-    margin: 0px 0px;
+    margin: 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 
-  .div_iconAndDescContainer {
-    margin: 0px 0px 30px 0px;
-    width: 70%;
+  .p_solutionDescription {
+    transition: height 0.3s ease-in-out;
+    font-size: 1.2rem;
+    height: 0;
   }
+  
+  .p_solutionDescription.expand {
+    height: auto;
+    margin-bottom: 20%;
+  }
+  
+  .div_servicesItems.expanded {
+    transition: height 0.3s ease-in-out;
+    height: auto;
+  }
+  
+  .div_servicesItems.collapsed {
+    transition: height 0.3s ease-in-out;
+    height: 0px;
+  }
+
+  .div_numberDescriptionSideComponent {
+    width: 100%;
+  }  
+
+  .div_numberDescriptionSideComponent::before {
+    content: 'como es el proceso para usar WhyWa';
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--main-color);
+    border-radius: 20px 0px;
+  }  
+
+
+  .article_processItem {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .div_processNumber {
+    display: none;
+  }
+
+  .p_processDescription {
+    width: 100%;
+    margin: 0px;
+  }
+
 
   .h2_descriptionTitle {
     font-size: 2rem;
@@ -736,7 +955,7 @@ html {
 
   .div_problemDescriptionContainer {
     margin: 0px;
-    padding: 50px 0px;
+    padding: 60px 30px;
   }
 
   .h1_problemTitle {
@@ -745,7 +964,9 @@ html {
   }
 
   .p_problemDescription {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin: 0px;
+    padding: 20px;
   }
 
   .figure_problemImage {
@@ -771,11 +992,17 @@ html {
   }
 
   .h2_solutionTitle {
+    font-size: 2rem;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
     margin: 0px;
   }
 
   .article_solutionItem {
     width: 70%;
+    text-align: center;
   }
 
   .img_descIcon {
@@ -783,23 +1010,20 @@ html {
   }
 
   .aside_conclusionTextContainer {
-    padding: 0px;
+    padding: 40px;
   }
 
   .div_conclusionComponent {
-    margin: 140px 0px 50px 0px;
+    margin: 40px 0px 0px 0px;
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
     padding: 0px 0px;
   }
 
-  .figure_conclusionImage {
-    margin-top: 40px;
-    width: 100%;
-    background-size: 100%;
-    background-position: 70%;
-    height: 300px;
+  .img_groupImg {
+    width: 100px;
+    height: 100px;
   }
 
   .h1_conclusionTitle {
@@ -810,7 +1034,6 @@ html {
   .p_conclusionParagraph {
     font-size: 1.5rem;
     padding: 0px 30px;
-
   }
 
   .main_finalComponent {
@@ -836,6 +1059,10 @@ html {
     margin-bottom: 30px;
   }
 
+  .img_conclusionImg {
+    display: none;
+  }
+
   .div_plansContainer {
     flex-direction: column;
     justify-content: center;
@@ -855,3 +1082,15 @@ html {
 
 }
 
+/* Estilos específicos para pantallas con un ancho mínimo de 430px */
+@media only screen and (max-width: 430px) {
+  .p_solutionDescription.expand {
+    height: auto;
+    margin-bottom: 110%;
+  }
+  
+  .div_servicesItems.expanded {
+    transition: height 0.3s ease-in-out;
+    height: auto;
+  }
+}

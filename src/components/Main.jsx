@@ -3,71 +3,74 @@ import ContextComponent from './ContextComponent';
 import LawAspectsComponent from './LawAspectsComponent'
 import GroupDescriptionComponent from './GroupDescriptionComponent';
 import NumberDescriptionBelowComponent from './NumberDescriptionBelowComponent'
-import DescriptionIconComponent from './DescriptionIconComponent'
-import { NumberDescriptionSideComponentOptions, NumberDescriptionSideComponentProcess } from './NumberDescriptionSideComponent';
+import NumberDescriptionSideComponent from './NumberDescriptionSideComponent';
 import ConclusionComponent from './ConclusionComponent';
-import FinalComponent from './FinalComponent';
 import Navbar from './Navbar.jsx';
 import useIntersectionObserver from '../hooks/useIntersectionObserver.js';
+import circle from '../img/circle.png'
 import '../styles/App.css'
 import '../styles/hiddenShowClasses.css';
 
 const MainComponent = () => {
     useIntersectionObserver('.hidden', 'show');
+    
+    const whatsappUrl = "https://wa.me/56949395999?text=Hola";
 
 
     return (
         <div className='mainBody'>
-            <Navbar />
+
+            <Navbar whatsappUrl={whatsappUrl} />
+
             <div className='div_mainTitle'>
-                <h1 className='h1_mainTitle'>Asistente <br /> virtual <br /> laboral</h1>
-                <div className='rectangle1 hidden'></div>
-                <div className='rectangle2 hidden'></div>
+                <div className='div_mainTitleButton'>
+                    <h1 className='h1_mainTitle'>WhyWa</h1>
+                    <img className='img_mainTitle hidden' src={circle}></img>
+                    <h2 className='h2_mainSubTitle'>we hear you, we act</h2>
+                    <p className='p_mainDesc'>Servicios digitales que facilitan a los empleadores la gestión de denuncias generadas por acoso laboral, acoso sexual y situaciones de violencia en el trabajo</p>
+                    <button className='button_contact' onClick={() => window.location.href = whatsappUrl}>📱 Contáctanos</button>
+                </div>
             </div>
             <div>
                 <div>
                     <ContextComponent  />
 
-                    <LawAspectsComponent />
-
-                    <GroupDescriptionComponent />
-
                     <div className='div_problemDescriptionContainer'>
-                        <h1 className='h1_problemTitle'>Problema</h1>
-                        <p  className='p_problemDescription'>En la actualidad la forma de trabajar esta evolucionando de forma acelerada, el marco regulatorio está planteando
-                        una serie de desafíos a los empleadores considerando también que los colaboradores presentan demandas claras
-                        y esperan un alto estandar de cumplimiento de parte de quienes representan a las empresas. Es difícil estar alerta
-                        a todas las demandas y requerimientos que deben cumplir los empleadores para cumplir con su deber de cuidar
-                        por el bienestar psicológico y físicos de sus empleados.</p>
+                        <h1 className='h1_problemTitle'>¿Has pensado, como optimizar tu operación para responder a los requerimientos de la Ley 21.643?</h1>
+                        <p  className='p_problemDescription'>Imaginemos que como empleador ya cuentas con tu protocolo de acción frente al acoso laboral, acoso sexual y situaciones de violencia con razón de ejercicio del cargo ¿Cómo atender las denuncias que recibas de estos casos con la minuciosidad y celeridad que se requiere? ¿Quién del equipo estará al tanto de todo el detalle del protocolo, del reglamento interno, del código de ética, de los últimos dictámenes de la DT como para analizar las denuncias de forma certera y rápida? ¿Cómo asegurar cumplir con los principios de celeridad, imparcialidad, perspectiva de género y confidencialidad que dispone la Ley? 
+                        Es difícil estar alerta a todas las demandas y requerimientos que deben cumplir los empleadores.
+                        </p>
                         <h1 className='h1_problemTitle hidden'>¿Cómo abordar este complejo escenario?</h1>
                     </div>
                     <figure className='figure_problemImage'></figure>
 
                     <NumberDescriptionBelowComponent />
 
-                    <DescriptionIconComponent />
-
                     <div className='div_processDescriptionContainer'>
-                        <h2 className='h2_subtitle'>recibes una denuncia</h2>
+                        <h2 className='h2_subtitle'>como es el proceso para usar WhyWa</h2>
                         <div className='div_processTitleRectangle hidden'></div>
                     </div>
 
-                    <NumberDescriptionSideComponentOptions />
+                    <NumberDescriptionSideComponent />
 
+                    <div className='div_processDescriptionContainer'>
+                        <h2 className='h2_subtitle'> </h2>
+                        <div className='div_processTitleRectangle hidden'></div>
+                    </div>
+
+                    <GroupDescriptionComponent />
+
+                    <LawAspectsComponent />
+                
                     <div className='div_issueProcess'>
-                        <h1>La denuncia se carga en el asistente virtual laboral empleador</h1>
+                        <h2>¿Why? <br/>
+                        Porque te ayudamos a ser más eficiente</h2>
+                        <p>Nuestos distintos servicios, que puedes comprar paquetizados o de forma individual, en contratos por subscripción, te permite reducir los esfuerzos del equipo interno, los costos de asesorías legales para el análisis de los casos, agiliza el tiempo de respuesta y asegura que las acciones son coherentes con tus procedimientos y marco legal, contribuyendo a una gestión más efectiva y justa.
+                        Te facilitamos la obligación de informar, capacitar y prevenir al contar con nuestros servicios.</p>
                     </div>
 
-                    <div className='div_processDescriptionContainer'>
-                        <h2 className='h2_subtitle'>como es el proceso</h2>
-                        <div className='div_processTitleRectangle hidden'></div>
-                    </div>
+                    <ConclusionComponent whatsappUrl={whatsappUrl} />
 
-                    <NumberDescriptionSideComponentProcess />
-
-                    <ConclusionComponent />
-
-                    <FinalComponent />
                 </div>
             </div>
         </div>
