@@ -701,6 +701,34 @@ html {
   color: var(--main-color);
 }
 
+.div_finalTitle {
+  margin: 200px 0px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div_finalTitleButton {
+  flex-direction: column;
+  margin: 0px;
+  position: relative;
+  width: 60%;
+}
+
+.h1_finalTitleWhyWa {
+  font-size: 7rem;
+}
+
+.p_finalDesc {
+  font-size: 2rem;
+  text-align: center;
+  z-index: 1;
+}
+
 /* Animaciones */
 
 .retract {
@@ -1080,13 +1108,41 @@ html {
     color: var(--main-color);
   }
 
+  .div_finalTitle {
+    margin: 200px 0px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .div_finalTitleButton {
+    flex-direction: column;
+    margin: 0px;
+    position: relative;
+    width: 60%;
+  }
+  
+  .h1_finalTitleWhyWa {
+    font-size: 4rem;
+  }
+  
+  .p_finalDesc {
+    font-size: 2rem;
+    text-align: center;
+    z-index: 1;
+  }
+
 }
 
 /* Estilos específicos para pantallas con un ancho mínimo de 430px */
 @media only screen and (max-width: 430px) {
   .p_solutionDescription.expand {
     height: auto;
-    margin-bottom: 110%;
+    margin-bottom: 130%;
   }
   
   .div_servicesItems.expanded {

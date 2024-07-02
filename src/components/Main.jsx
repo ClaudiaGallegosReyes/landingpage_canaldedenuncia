@@ -71,6 +71,14 @@ const MainComponent = () => {
 
                     <ConclusionComponent whatsappUrl={whatsappUrl} />
 
+                    <div className='div_finalTitle'>
+                    <div className='div_finalTitleButton'>
+                            <h1 className='h1_finalTitleWhyWa'>WhyWa</h1>
+                            <h2 className='h2_mainSubTitle'>we hear you, we act</h2>
+                            <p className='p_finalDesc'>Servicios digitales que facilitan a los empleadores la gestión de denuncias generadas por acoso laboral, acoso sexual y situaciones de violencia en el trabajo</p>
+                            <button className='button_contact' onClick={() => window.location.href = whatsappUrl}>📱 Contáctanos</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
