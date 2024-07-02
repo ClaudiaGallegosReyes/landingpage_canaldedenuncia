@@ -14,7 +14,7 @@ import '../styles/hiddenShowClasses.css';
 const MainComponent = () => {
     useIntersectionObserver('.hidden', 'show');
     
-    const whatsappUrl = "https://wa.me/56949395999?text=Hola";
+    const whatsappUrl = "https://wa.me/56957953583?text=Hola";
 
 
     return (
